@@ -1,0 +1,46 @@
+<div class="homepage-container">
+    <div class="homepage-title">
+        <img src="assets/logo.png" />
+        <span class="h1" style="margin-bottom: 15px;">Hey! Good to see you!</span>
+        <span class="h2">How do you want to explore costs today?</span>
+    </div>
+    <div class="homepage-cards">
+        <mat-card class="by-user-card" routerLink="users">
+            <mat-card-title>
+                Explore by User
+            </mat-card-title>
+            <mat-card-content>
+                <mat-icon>account_circle</mat-icon>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="by-date-card" routerLink="dates">
+            <mat-card-title>
+                Explore by Date
+            </mat-card-title>
+            <mat-card-content>
+                <mat-icon>calendar_month</mat-icon>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="by-user-and-date-card" routerLink="users-and-dates">
+            <mat-card-title>
+                Explore by User & Date
+            </mat-card-title>
+            <mat-card-content>
+                <mat-icon>person_search</mat-icon>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="by-category-card" routerLink="categories">
+            <mat-card-title>
+                Explore by Category
+            </mat-card-title>
+            <mat-card-content>
+                <mat-icon>category</mat-icon>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="footer">
+        <button mat-raised-button routerLink="add">
+            add users and costs
+        </button>
+    </div>
+</div>

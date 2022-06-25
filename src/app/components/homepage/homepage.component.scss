@@ -1,0 +1,74 @@
+.homepage-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.homepage-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    .h1 {
+        font-family: Heebo;
+        font-size: 36px;
+    }
+    .h2 {
+        font-family: Heebo Light;
+        font-size: 26px;
+    }
+}
+
+.homepage-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+mat-card {
+    background-color: whitesmoke;
+    height: 15%;
+    width: 20%;
+    mat-card-title {
+        font-family: Heebo Light;
+    }
+    mat-card-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        mat-icon {
+            transform: scale(4);
+            margin-top: 30%;
+            margin-bottom: 30%;
+        }
+    }
+}
+
+mat-card:hover {
+    cursor: pointer;
+    background-color: rgba(#1C8C96, 0.6)
+}
+
+img {
+    height: 15%;
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+mat-icon {
+    color: #1C8C96;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    button {
+        background-color: rgba(#1C8C96, 0.6);
+    }
+}
