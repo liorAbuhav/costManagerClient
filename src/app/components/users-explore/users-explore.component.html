@@ -1,1 +1,6 @@
-<p>users-explore works!</p>
+<div class="container">
+    <span class="title">Users</span>
+    <mat-card *ngFor="let user of this.users" (click)="this.cardClick(user)">
+        {{user.first_name}} {{user.last_name}}
+    </mat-card>
+</div>

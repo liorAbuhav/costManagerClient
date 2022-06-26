@@ -1,1 +1,7 @@
-<p>costs-dialog works!</p>
+<div>
+    <mat-card *ngFor="let cost of this.data.costs">
+        <span>{{cost.description}}</span>
+        <span>{{cost.sum}}</span>
+    </mat-card>
+    <div *ngIf="this.data.costs.length === 0" class="no-costs">Sorry! we have no costs for your filters</div>
+</div>

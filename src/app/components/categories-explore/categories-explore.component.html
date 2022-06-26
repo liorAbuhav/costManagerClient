@@ -1,1 +1,6 @@
-<p>categories-explore works!</p>
+<div class="container">
+    <span class="title">Categories</span>
+    <mat-card *ngFor="let category of this.categories" (click)="this.cardClick(category)">
+        {{category.name}}
+    </mat-card>
+</div>

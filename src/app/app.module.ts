@@ -12,6 +12,8 @@ import { DatesExploreComponent } from './components/dates-explore/dates-explore.
 import { CategoriesExploreComponent } from './components/categories-explore/categories-explore.component';
 import { UsersAndDatesExploreComponent } from './components/users-and-dates-explore/users-and-dates-explore.component';
 import { AdddingFormsComponent } from './components/addding-forms/addding-forms.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { AdddingFormsComponent } from './components/addding-forms/addding-forms.
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

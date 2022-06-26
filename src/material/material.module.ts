@@ -10,6 +10,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -22,7 +23,8 @@ const modules = [ MatCardModule,
                   MatTooltipModule,
                   MatSnackBarModule,
                   MatProgressBarModule,
-                  MatListModule
+                  MatListModule,
+                  MatDialogModule,
                 ];
 
 @NgModule({
