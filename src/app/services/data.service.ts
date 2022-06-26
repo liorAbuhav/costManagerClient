@@ -42,20 +42,15 @@ export class DataService {
     return this.http.get<any>(url);
   }
 
-  // getExecutionsDataByMonitorId(monitorId: string): Observable<any> {
-  //   const url = this.apiUrl + 'executor/' + monitorId;
-  //   return this.http.get<any>(url);
-  // }
+  //PUT requests
+  createUser(newUserData: any): Observable<any> {
+    const url = this.apiUrl + 'users';
+    return this.http.post<any>(url, newUserData);
+  }
 
-  // //PUT requests
-  // createMonitor(newMonitorData: any): Observable<any> {
-  //   const url = this.apiUrl + 'monitor';
-  //   return this.http.put<any>(url, newMonitorData)
-  // }
+  createCost(newCostData: any): Observable<any> {
+    const url = this.apiUrl + 'costs';
+    return this.http.post<any>(url, newCostData);
+  }
 
-  // // POST requests
-  // executeMonitor(monitorId: string): Observable<any> {
-  //   const url = this.apiUrl + 'executor/execute/' + monitorId;
-  //   return this.http.post<any>(url, {});
-  // }
 }

@@ -14,6 +14,7 @@ import { UsersAndDatesExploreComponent } from './components/users-and-dates-expl
 import { AdddingFormsComponent } from './components/addding-forms/addding-forms.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DatesExploreComponent,
     CategoriesExploreComponent,
     UsersAndDatesExploreComponent,
-    AdddingFormsComponent
+    AdddingFormsComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,

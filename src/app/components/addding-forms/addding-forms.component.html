@@ -1,1 +1,61 @@
-<p>addding-forms works!</p>
+<div class="container">
+    <div class="user-form">
+        <span class="title">create user</span>
+        <form [formGroup]="this.newUserForm" >
+            <mat-form-field appearance="standard">
+            <mat-label>id</mat-label>
+            <input matInput formControlName="id">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>first name</mat-label>
+                <input matInput formControlName="first_name">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>last_name</mat-label>
+                <input matInput formControlName="last_name">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>birthday (0000-00-00 00:00:00)</mat-label>
+                <input matInput formControlName="birthday">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>marital status</mat-label>
+                <input matInput formControlName="marital_status">
+            </mat-form-field>
+        </form>
+    
+        <div class="font-change">
+            <button mat-stroked-button [disabled]="!newUserForm.valid" (click)="submitUser()">Run new user</button>
+        </div>
+    </div>
+
+    <div class="cost-form">
+        <span class="title">create cost</span>
+        <form [formGroup]="this.newCostForm" >
+            <mat-form-field appearance="standard">
+            <mat-label>user_id</mat-label>
+            <input matInput formControlName="user_id">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>description</mat-label>
+                <input matInput formControlName="description">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>category</mat-label>
+                <input matInput formControlName="category">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>sum</mat-label>
+                <input matInput formControlName="sum" type="number">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>date (0000-00-00 00:00:00)</mat-label>
+                <input matInput formControlName="date">
+            </mat-form-field>
+        </form>
+    
+        <div class="font-change">
+            <button mat-stroked-button [disabled]="!newUserForm.valid" (click)="submitCost()">Run new cost</button>
+        </div>
+    </div>
+</div>

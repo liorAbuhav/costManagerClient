@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.user-form, .cost-form {
+    display: flex;
+    flex-direction: column;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.title {
+    font-family: Heebo;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;;
+}
