@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  apiUrl = 'http://ec2-18-212-226-39.compute-1.amazonaws.com:8080/api/';
+  apiUrl = 'http://ec2-3-85-236-243.compute-1.amazonaws.com:8080/api/';
 
   constructor(public http: HttpClient) { }
 
